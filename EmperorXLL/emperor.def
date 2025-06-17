@@ -1,0 +1,6 @@
+; emperor.def : Declares the module parameters for the XLL.
+
+LIBRARY
+
+EXPORTS
+	xlAutoOpen

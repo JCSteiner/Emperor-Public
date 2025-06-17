@@ -1,0 +1,51 @@
+#include "winver.h"
+
+#define IDI_ICON1                       101
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+#define VER_FILEVERSION             10,0,19041,4957
+#define VER_FILEVERSION_STR         "10,0,19041,4957\0"
+
+#define VER_PRODUCTVERSION          10,0,19041,4957
+#define VER_PRODUCTVERSION_STR      "10,0,19041,4957\0"
+
+VS_VERSION_INFO VERSIONINFO
+FILEVERSION     VER_FILEVERSION
+PRODUCTVERSION  VER_PRODUCTVERSION
+FILEFLAGSMASK   VS_FFI_FILEFLAGSMASK
+FILEOS          VOS__WINDOWS32
+FILETYPE        VFT_APP
+FILESUBTYPE     VFT2_UNKNOWN
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "Microsoft Corporation"
+            VALUE "FileDescription", "Windows Explorer"
+            VALUE "FileVersion", "10.0.19041.4957 (WinBuild.160101.0800)"
+            VALUE "InternalName", "explorer"
+            VALUE "LegalCopyright", "\xA9 Microsoft Corporation. All rights reserved."
+            VALUE "OriginalFilename", "EXPLORER.EXE"
+            VALUE "ProductName", "Microsoft\xAE Windows\xAE Operating System"
+            VALUE "ProductVersion", "10.0.19041.4957"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1266
+    END
+END
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON1               ICON                    "icon.ico"
